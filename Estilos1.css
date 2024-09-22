@@ -1,0 +1,88 @@
+/* Fondo y tipografía */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient( #2196f3,#e3f2fd);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  
+    margin: 0;
+}
+
+/* Contenedor principal */
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 400px;
+}
+
+/* Título */
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #2196f3;
+}
+
+/* Etiquetas */
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.1em;
+    color: #555;
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid #2196f3;
+    border-radius: 8px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Efecto focus en input */
+input:focus {
+    border-color: #1976d2;
+}
+
+/* Botón de calcular */
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+/* Efecto hover en el botón */
+button:hover {
+    background:linear-gradient(#1976d2,#71abe6);
+    transform: translateY(-2px);
+}
+
+/* Resultado */
+#resultado {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+.container::after {
+    content: "Hecho por Vicente Vázquez";
+    display: block;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #777;
+}

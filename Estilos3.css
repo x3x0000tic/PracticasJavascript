@@ -1,0 +1,93 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('Searss.jpg'); 
+    background-size:contain;
+    background-position: center; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+ 
+}
+
+.container {
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    width: 400px;
+    position: relative; 
+    z-index: 1; 
+}
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #1e88e5; /* Tonalidad azul más oscura */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #37474f; /* Color gris oscuro */
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    border: 2px solid #1e88e5; /* Azul oscuro */
+    border-radius: 8px;
+    font-size: 1em;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #1565c0; /* Azul más intenso */
+    box-shadow: 0 0 5px rgba(21, 101, 192, 0.5);
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #42a5f5, #64b5f6); /* Azul claro */
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2196f3, #42a5f5); /* Azul más oscuro */
+    transform: translateY(-2px);
+}
+
+#resultado {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    background-color: #e0f7fa;
+    border: 2px solid #4caf50;
+    border-radius: 8px;
+    padding: 15px;
+    transition: background-color 0.3s;
+}
+
+#resultado:hover {
+    background-color: #b2ebf2;
+}
+
+.container::after {
+    content: "Hecho por Vicente Vázquez";
+    display: block;
+    margin-top: 20px;
+    font-size: 0.8em;
+    color: #777;
+}

@@ -1,0 +1,83 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 400px;
+    color: white;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-size: 1.1em;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1em;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+}
+
+
+button {
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.1em;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background-color: #ff4757;
+    box-shadow: 0 8px 16px rgba(255, 107, 107, 0.3);
+}
+
+
+#resultado {
+    margin-top: 30px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+
+.container::after {
+    content: "Hecho por Vicente Vázquez";
+    display: block;
+    margin-top: 30px;
+    font-size: 0.9em;
+    color: rgba(255, 255, 255, 0.7);
+}

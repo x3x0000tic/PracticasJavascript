@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="Estilos9.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulario de Registro</h2>
+        <form id="registroForm" onsubmit="return validarFormulario()">
+            <label for="nombre">Nombre:</label>
+            <div class="input-group">
+                <input type="text" id="nombre" required onblur="validarCampo('nombre')">
+                <span class="error-icon" id="error-nombre">🚫</span>
+            </div>
+
+            <label for="email">Email:</label>
+            <div class="input-group">
+                <input type="email" id="email" required onblur="validarCampo('email')">
+                <span class="error-icon" id="error-email">🚫</span>
+            </div>
+
+            <label for="comentarios">Comentarios:</label>
+            <div class="input-group">
+                <textarea id="comentarios" maxlength="50" required onblur="validarCampo('comentarios')"></textarea>
+                <span class="error-icon" id="error-comentarios">🚫</span>
+            </div>
+
+            <label for="password">Contraseña:</label>
+            <div class="input-group">
+                <input type="password" id="password" required onblur="validarCampo('password')">
+                <span class="error-icon" id="error-password">🚫</span>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="aceptar" required>
+                <label for="aceptar">Acepto las condiciones del servicio</label>
+            </div>
+            
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    
+    <script src="9.js"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos4.css">
+    <title>Algoritmia/Calificaciones</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Calificaciones</h1>
+        <h2>Algoritmia</h2>
+        <label for="cal1">Calificación Parcial 1:</label>
+        <input type="number" id="cal1" max="10" required>
+        
+        <label for="cal2">Calificación Parcial 2:</label>
+        <input type="number" id="cal2" max="10" required>
+        
+        <label for="cal3">Calificación Parcial 3:</label>
+        <input type="number" id="cal3" max="10" required>
+        
+        <label for="examenFinal">Calificación del Examen Final:</label>
+        <input type="number" id="examenFinal" max="10" required>
+        
+        <label for="trabajoFinal">Calificación del Trabajo Final:</label>
+        <input type="number" id="trabajoFinal" max="10" required>
+        
+        <button onclick="calcularCalificacion()">Calcular Calificación Final</button>
+
+        <h2 id="resultado">Tu calificación final es: </h2>
+    </div>
+    <script src="4.js"></script>
+</body>
+</html>
